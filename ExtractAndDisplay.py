@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 import base64
 import queue
+import time
 
 def extractFrames(fileName, outputBuffer, maxFramesToLoad=9999):
     # Initialize frame count 
@@ -35,6 +36,7 @@ def extractFrames(fileName, outputBuffer, maxFramesToLoad=9999):
 
 
 def displayFrames(inputBuffer):
+    time.sleep(5)
     # initialize frame count
     count = 0
 
