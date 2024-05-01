@@ -12,7 +12,7 @@ def convert_to_grayscale(inputQueue, outputDir):
     inFileName = f'{outputDir}/grayscale_frame_{count:04d}.bmp'
     # get the next frame file name
     inputFrame = inputQueue.get()
-    while inputFrame is not None:
+    while inputFrame is not None and count < 739:
         print(f'Converting frame {count}')
         # convert the image to grayscale
         grayscaleFrame = cv2.cvtColor(inputFrame, cv2.COLOR_BGR2GRAY)
