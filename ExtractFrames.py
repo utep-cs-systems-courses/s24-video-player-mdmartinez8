@@ -20,7 +20,7 @@ if not os.path.exists(outputDir):
 success,image = vidcap.read()
 
 print(f'Reading frame {count} {success}')
-while success and count < 72:
+while success and count < 76:
 
   # write the current frame out as a jpeg image
   cv2.imwrite(f"{outputDir}/frame_{count:04d}.bmp", image)   
